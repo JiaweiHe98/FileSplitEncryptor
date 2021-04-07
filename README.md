@@ -31,5 +31,10 @@ pycryptodome is an evolution of pycrypto. pycryptodome can be installed through 
 ### Advanced Encryption Standard (AES)
 The Advanced Encryption Standard (AES), also known as Rijindael, is a widely use encryption standard for symmetric encryption, which uses the same key for both encrypting and decrypting. AES is also pretty fast since AES instruction set is now integrated into a large variety of processors, which provides hardware acceleration for the tasks associated with AES.
 
+### AES Cipher Length
+AES can only support several different key sizes, for example, 56 bits, 128 bits, 192 bits, and 256 bits. Higher the length is, higher the security level is, theoretically. Therefore, we need to pad or hash the key into one of the length that AES support.
+
 ### File Splitting and File Merging
-Computers use binary to store files. An encrypted file is also a type of file stored in the computer memory.
+Computers use binary to store files. An encrypted file is also stored in a computer's memory through a series of binary bits. So, if we cut the whole chunk of the file into pieces and remember the order of each piece, we will able to merge them on another machine without damaging the file.
+
+
